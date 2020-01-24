@@ -4,6 +4,7 @@
 	<title>pepe</title>
 </head>
 <body>
+	<h1>SUPER DUPER TITULO</h1>
 	<button>Boton</button>
 	<p>este es el primer titulo</p>
 
