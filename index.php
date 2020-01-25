@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>pepe</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<h1>SUPER DUPER TITULO</h1>
