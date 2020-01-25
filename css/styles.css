@@ -1,0 +1,9 @@
+html {
+  background: red; }
+  html body {
+    background: lime; }
+    html body p {
+      color: blue; }
+
+body {
+  background: red; }
