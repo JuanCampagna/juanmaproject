@@ -7,7 +7,7 @@
 <body>
 	<h1>SUPER DUPER TITULO</h1>
 	<button>Boton</button>
-	<p>este es el primer titulo</p>
+	<p>este es el primer wachi titulo</p>
 
 	<select class="mongo">
 		<option>1</option>
