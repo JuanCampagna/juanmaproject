@@ -29,7 +29,7 @@ while ($row = pg_fetch_row($result)) {
 			 $row[16].",".
 			 $row[17];
 	}else{
-		echo "Hay mas de un resultado";
+		echo (pg_affected_rows($result));
 	}
 };
 
