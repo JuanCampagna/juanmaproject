@@ -10,8 +10,8 @@ $result = pg_query($db,$query);
 while ($row = pg_fetch_row($result)) {
 	// echo pg_affected_rows($result);
 	if (pg_affected_rows($result) == 1) {
-		echo $_REQUEST['cognome'].",".
-			 $_REQUEST['nome'].",".
+		echo $row[0].",".
+			 $row[1].",".
 			 $row[2].",".
 			 $row[3].",".
 			 $row[4].",".
