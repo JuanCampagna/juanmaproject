@@ -1,15 +1,36 @@
 <?php
 include("./../conexion.php");
 
-$query="SELECT * FROM test_csv
+$query="SELECT * FROM juanma.test_csv
 		WHERE cognome LIKE '%".$_REQUEST['cognome']."%'
 		AND nome LIKE '%".$_REQUEST['nome']."%';";
 
-$resultado = pg_query($db,$query);
-// $row = pg_fetch_array($resultado);
+$result = pg_query($db,$query);
 
-while ($resultado = pg_fetch_row($resultado)) {
-	echo $resultado;
-}
+while ($row = pg_fetch_row($result)) {
+	// echo pg_affected_rows($result);
+	if (pg_affected_rows($result) == 1) {
+		echo $_REQUEST['cognome'].",".
+			 $_REQUEST['nome'].",".
+			 $row[2].",".
+			 $row[3].",".
+			 $row[4].",".
+			 $row[5].",".
+			 $row[6].",".
+			 $row[7].",".
+			 $row[8].",".
+			 $row[9].",".
+			 $row[10].",".
+			 $row[11].",".
+			 $row[12].",".
+			 $row[13].",".
+			 $row[14].",".
+			 $row[15].",".
+			 $row[16].",".
+			 $row[17];
+	}else{
+		echo "Hay mas de un resultado";
+	}
+};
 
 ?>
